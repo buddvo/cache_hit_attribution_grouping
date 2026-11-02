@@ -1,11 +1,11 @@
-# datagov_jd100
+# cache_hit_attribution_grouping
 
 **把数据治理与血缘专家·缓存命中率的归因归并成组并标出每组的代表项。**
 
-`datagov_jd100` —— 按结构键把条目聚类，标出数据治理与血缘专家·缓存命中率的归因上的同组项与各组的代表样本
+`cache_hit_attribution_grouping` —— 按结构键把条目聚类，标出数据治理与血缘专家·缓存命中率的归因上的同组项与各组的代表样本
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`datagov_jd100.py` 拷走就能用
+- 单文件，`cache_hit_attribution_grouping.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install buddvo-datagov_jd100
+pip install buddvo-cache_hit_attribution_grouping
 ```
 
 装完直接用命令名调用：
 
 ```bash
-datagov_jd100 --help
+cache_hit_attribution_grouping --help
 ```
 
-也可以不用安装，直接把 `datagov_jd100.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `cache_hit_attribution_grouping.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ datagov_jd100 --help
 ## 用法
 
 ```bash
-python datagov_jd100.py --file input.txt
-python datagov_jd100.py --text "示例内容"
-python datagov_jd100.py --file input.txt --json
+python cache_hit_attribution_grouping.py --file input.txt
+python cache_hit_attribution_grouping.py --text "示例内容"
+python cache_hit_attribution_grouping.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python datagov_jd100.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_datagov_jd100.py
+python test_cache_hit_attribution_grouping.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_datagov_jd100.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/buddvo/datagov_jd100>
+- GitHub 仓库：<https://github.com/buddvo/cache_hit_attribution_grouping>
 
 ---
 
@@ -79,7 +79,7 @@ python test_datagov_jd100.py
 buddvo 做数据治理与血缘专家·缓存命中率的归因相关的问题，方向对标面壁智能的中级数据治理与血缘专家岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://buddvo.github.io>
-- 仓库：<https://github.com/buddvo/datagov_jd100>
+- 仓库：<https://github.com/buddvo/cache_hit_attribution_grouping>
 
 ## 许可
 
